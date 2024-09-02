@@ -12,6 +12,7 @@
   color: var(--color-detail);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid var(--color-border-light);
+  width: auto;
 
   .AppHeader-globalBar-left {
     flex: 1 1 auto;
@@ -70,7 +71,7 @@
       align-items: center;
 
       input {
-        width: 20rem;
+        width: 20vw;
         max-height: 2rem;
         padding: 0.4rem 0.8rem;
         padding-left: 2rem;
@@ -293,7 +294,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px; /* Adjust the width as needed */
+  width: 16rem; /* Adjust the width as needed */
   height: 100%;
   z-index: 1001;
   transform: translateX(-100%);
@@ -318,7 +319,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 300px; /* Adjust the width as needed */
+  width: 18rem;
   height: 100%;
   z-index: 1001;
   transform: translateX(100%);
