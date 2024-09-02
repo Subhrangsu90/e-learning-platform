@@ -7,7 +7,7 @@
     "landing-page": "ng serve landing-page --configuration development --port 4201 -o",
     "dashboard": "ng serve dashboard --configuration development --port 4202 -o",
     "start": "concurrently \"ng run shell:serve\" \"ng run landing-page:serve\" \"ng run dashboard:serve\"",
-    "build": "ng build shell:dev && ng build landing-page:dev && ng build dashboard:dev",
+    "build": "ng build shell --configuration development && ng build landing-page --configuration development && ng build dashboard --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
