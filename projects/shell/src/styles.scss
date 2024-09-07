@@ -10,6 +10,18 @@
   --color-border-light: #656c76; /* Muted Color */
   --color-gray-medium: #9198a1; /* Medium Gray */
   --color-backdrop-overlay: #21283066;
+  --color-input-valid: #4caf50;
+  --color-input-invalid: #f44336;
+
+  --orange-red: oklch(63.32% 0.24 31.68);
+  --vivid-pink: oklch(69.02% 0.277 332.77);
+  --electric-violet: oklch(53.18% 0.28 296.97);
+  --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+    180deg,
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
 }
 
 :root {
@@ -64,6 +76,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  box-sizing: border-box;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

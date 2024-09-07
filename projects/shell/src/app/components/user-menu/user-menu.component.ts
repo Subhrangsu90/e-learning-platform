@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-user-menu',
   standalone: true,
@@ -10,13 +10,19 @@ import { RouterModule } from '@angular/router';
   styleUrl: './user-menu.component.scss',
 })
 export class UserMenuComponent {
+  private router = inject(Router);
   isNavOpen = false;
   @Output() closeUserMenuBar = new EventEmitter<void>();
 
   toggleNav() {
     console.log(this.isNavOpen);
-
     this.isNavOpen = !this.isNavOpen;
+  }
+
+  onLogout() {
+    // Clear login data from localStorage
+    localStorage.removeItem('userData');
+    this.router.navigate(['']);
   }
 
   onClose() {

@@ -1,0 +1,43 @@
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.95rem 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-detail);
+
+  .logo img {
+    height: 2rem;
+  }
+
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+
+    li a {
+      color: var(--color-detail);
+      text-decoration: none;
+      font-size: var(--font-size-normal);
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+
+    .signup-button {
+      background-color: var(--color-accent);
+      color: var(--color-secondary);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-dominant);
+      }
+    }
+  }
+}

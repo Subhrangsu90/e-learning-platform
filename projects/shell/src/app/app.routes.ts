@@ -1,14 +1,22 @@
 import { Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/native-federation';
-import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './components/error-pages/not-found/not-found.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
+import { LoginComponent } from './components/auth/login/login.component';
 
 export const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: FooterComponent,
-  //   pathMatch: 'full',
-  // },
+  {
+    path: 'signup',
+    component: SignupComponent,
+    pathMatch: 'full',
+    title: 'Signup',
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+    pathMatch: 'full',
+    title: 'Login',
+  },
   {
     path: '',
     loadComponent: () =>

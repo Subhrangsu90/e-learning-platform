@@ -1,7 +1,56 @@
-<div class="landing-page-container">
-  <h1 class="welcome-message">Hi! This is Landing Page</h1>
+<!-- <div class="landing-page-container">
+  <div class="landing-header-container">
+    <app-landing-header />
+  </div>
 
-  <p class="dashboard-link" (click)="navigateToDashboard()">
-    Let's go to Dashboard
-  </p>
+  <div class="hero-section-container">
+    <app-hero-section />
+  </div>
+
+  <div class="site-features-container">
+    <app-site-features />
+  </div>
+
+  <div class="top-courses-container">
+    <app-top-cources-card />
+  </div>
+
+  <div class="about-tutors-container">
+    <app-about-tutors />
+  </div>
+
+  <div class="students-feedback-container">
+    <app-students-feedback />
+  </div>
+
+  <div class="subscribe-card-container">
+    <app-subscribe-card />
+  </div>
+
+  <div class="landing-footer-container">
+    <app-landing-footer />
+  </div>
+</div> -->
+
+<div class="landing-page-container">
+  <app-landing-header></app-landing-header>
+  <app-hero-section></app-hero-section>
+
+  <div id="top-courses">
+    <app-top-cources-card />
+  </div>
+
+  <div id="about-tutors">
+    <app-about-tutors></app-about-tutors>
+  </div>
+
+  <div id="students-feedback">
+    <app-students-feedback></app-students-feedback>
+  </div>
+
+  <div id="subscribe">
+    <app-subscribe-card></app-subscribe-card>
+  </div>
+
+  <app-landing-footer></app-landing-footer>
 </div>

@@ -1,31 +1,24 @@
 .landing-page-container {
+  font-family: Arial, sans-serif;
+  color: var(--color-detail);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100dvh;
+  min-height: 100vh;
 
-  .welcome-message {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--color-detail);
-    margin-bottom: 20px;
+  .landing-header-container {
   }
-
-  .dashboard-link {
-    font-size: 1.5rem;
-    color: var(--color-accent);
-    cursor: pointer;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: var(--color-gray-medium);
-    }
-
-    &:active {
-      color: var(--color-border-light);
-    }
+  .hero-section-container {
+  }
+  .site-features-container {
+  }
+  .top-courses-container {
+  }
+  .about-tutors-container {
+  }
+  .students-feedback-container {
+  }
+  .subscribe-card-container {
+  }
+  .landing-footer-container {
   }
 }
