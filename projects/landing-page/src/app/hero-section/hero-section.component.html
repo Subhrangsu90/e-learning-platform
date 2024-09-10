@@ -1,10 +1,17 @@
-<section class="hero-section">
+<section
+  class="hero-section"
+  [ngStyle]="{
+    'background-image': 'url(' + imageBaseUrl + '/assets/icons/bg-learning.jpg)'
+  }"
+  loading="lazy"
+>
   <div class="hero-content">
-    <h1>Welcome to Our eLearning Platform</h1>
+    <h1>Empower Your Future with Our eLearning Platform</h1>
     <p>
-      Discover a wide range of courses and learn from the best tutors around the
-      world.
+      Unlock your potential and master web development skills from
+      industry-leading experts. Join a community of learners and take your
+      career to the next level!
     </p>
-    <button (click)="navigateToSignup()">Get Started</button>
+    <button (click)="navigateToSignup()">Start Your Journey</button>
   </div>
 </section>

@@ -2,35 +2,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  // background-image: url("assets/hero-bg.jpg");
+  height: 40rem;
   background-size: cover;
   background-position: center;
-  padding: 4rem 2rem;
-  color: var(--color-detail);
   text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 
   .hero-content {
-    max-width: 600px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     h1 {
       font-size: var(--font-size-x-large);
       margin-bottom: 1rem;
+      font-weight: bold;
     }
 
     p {
-      font-size: var(--font-size-medium);
+      font-size: var(--font-size-normal);
       margin-bottom: 2rem;
+      line-height: 1.5;
+      width: 40rem;
     }
 
     button {
       background-color: var(--color-accent);
       color: var(--color-secondary);
       border: none;
-      padding: 0.75rem 2rem;
-      font-size: var(--font-size-large);
+      padding: 0.5rem 2.5rem;
+      font-size: var(--font-size-smaller);
       border-radius: 5px;
       cursor: pointer;
+      transition: background-color 0.3s;
 
       &:hover {
         background-color: var(--color-accent);
