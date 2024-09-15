@@ -1,1 +1,12 @@
-<p style="height: 40rem">top-cources-card works!</p>
+<section class="top-cources-section">
+  <p class="title">Top Cources</p>
+  <div class="all-cources-card">
+    @for (course of courses; track course) {
+    <app-cource-card
+      [courseTitle]="course.title"
+      [courseDescription]="course.description"
+      [courseImage]="course.image"
+    ></app-cource-card>
+    }
+  </div>
+</section>

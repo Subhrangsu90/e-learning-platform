@@ -10,8 +10,8 @@
 
   .hero-content {
     background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     height: 100%;
     width: 100%;
     display: flex;
@@ -34,7 +34,7 @@
 
     button {
       background-color: var(--color-accent);
-      color: var(--color-secondary);
+      color: var(--color-detail);
       border: none;
       padding: 0.5rem 2.5rem;
       font-size: var(--font-size-smaller);

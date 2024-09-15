@@ -1,0 +1,12 @@
+<div class="course-card">
+  <div class="course-img">
+    <img [src]="courseImage" alt="Course Thumbnail" />
+  </div>
+  <div class="course-info">
+    <h3 class="course-title">{{ courseTitle }}</h3>
+    <p class="course-description">{{ courseDescription }}</p>
+    <div (click)="onEnroll()" class="enroll-btn">
+      <img src="{{ imageBaseUrl }}/assets/icons/lock.svg" alt="" />
+    </div>
+  </div>
+</div>

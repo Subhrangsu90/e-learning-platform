@@ -30,5 +30,4 @@ export class AppComponent {
   title = 'landing-page';
 
   constructor(private router: Router) {}
-  
 }
